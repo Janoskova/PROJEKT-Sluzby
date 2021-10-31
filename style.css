@@ -1,0 +1,309 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  line-height: 1.5;
+}
+
+.agency {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* section introduction */
+.introduction {
+  text-align: center;
+}
+
+.introduction__traveller {
+  display: block;
+  margin: 60px auto 0 auto;
+  max-width: 350px;
+}
+
+.introduction h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.introduction__text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #8b8b8b;
+  margin: 30px 20px;
+}
+
+.introduction hr {
+  border: 2px solid #407bff;
+  margin: 0 auto;
+  max-width: 60px;
+}
+
+.introduction__button a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1;
+  padding: 10px 30px;
+  border-radius: 15px;
+  display: block;
+}
+.introduction__button--blue {
+  background-color: #407bff;
+  margin: 0 auto 10px auto;
+  max-width: 30%;
+}
+
+.introduction__button--grey {
+  background-color: #8b8b8b;
+  margin: auto;
+  max-width: 35%;
+}
+
+/* sections services and courier */
+
+.section__heading {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px auto 15px auto;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #8b8b8b;
+  margin: 0px 20px 30px 20px;
+}
+
+.services .text,
+.courier .text {
+  text-align: center;
+}
+
+.offre {
+  background-color: #ffffff;
+  margin: 15px 20px 0 20px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.offre p {
+  font-size: 13px;
+  color: #8b8b8b;
+  margin-left: 30px;
+}
+
+.offre img {
+  display: block;
+}
+
+.offre:last-child {
+  margin-bottom: 60px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 640px) {
+  .agency {
+    max-width: 768px;
+  }
+
+  /* section introduction */
+  .introduction__traveller {
+    max-width: 400px;
+  }
+
+  .introduction h1 {
+    margin-top: 30px;
+  }
+
+  .introduction__text {
+    margin: 30px auto;
+    max-width: 550px;
+  }
+
+  .introduction__button {
+    display: flex;
+    justify-content: center;
+  }
+  .introduction__button--blue {
+    max-width: 30%;
+    margin: 0;
+  }
+
+  .introduction__button--grey {
+    max-width: 35%;
+    margin: 0 0 0 20px;
+  }
+
+  /* sections services and courier */
+
+  .section__heading {
+    margin: 80px auto 15px auto;
+  }
+
+  .text {
+    margin: 0px auto 40px auto;
+    max-width: 550px;
+  }
+
+  .offres__list {
+    display: flex;
+  }
+
+  .offres__list:last-child {
+    margin-bottom: 60px;
+  }
+
+  .offre {
+    display: block;
+    padding: 40px 15px 20px 15px;
+    margin: 0 20px 0 0;
+  }
+
+  .offre:first-child {
+    margin-left: 20px;
+  }
+
+  .offre p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .offre img {
+    margin: 0 auto 20px auto;
+  }
+
+  .offre:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+/* PC */
+
+@media screen and (min-width: 1100px) {
+  .agency {
+    max-width: 1040px;
+  }
+
+  /* section introduction */
+
+  .introduction {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 60px auto 80px auto;
+    text-align: left;
+  }
+
+  .introduction--right {
+    flex-basis: 490px;
+  }
+
+  .introduction__traveller {
+    max-width: 425px;
+    margin: auto;
+    vertical-align: middle;
+  }
+
+  .introduction--left {
+    flex-basis: 490px;
+  }
+
+  .introduction h1 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+
+  .introduction hr {
+    margin: 0;
+  }
+
+  .introduction__button {
+    justify-content: flex-start;
+  }
+
+  /* section services */
+  .services {
+    display: flex;
+    margin: 0 auto 80px auto;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .services .text {
+    text-align: left;
+  }
+
+  .services__description {
+    max-width: 430px;
+    margin-left: 60px;
+  }
+
+  /* offres__list and text in sections services and courier */
+  .section__heading {
+    text-align: left;
+    margin: auto auto 15px auto;
+  }
+
+  .text {
+    margin: 0;
+    max-width: 430px;
+  }
+
+  .offres__list {
+    max-width: 550px;
+  }
+
+  .offre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-height: 191px;
+    padding: 40px 15px;
+  }
+
+  .offre:nth-child(2) {
+    margin: 0 20px 0 0;
+  }
+
+  .offre:first-child {
+    margin-left: 0;
+  }
+
+  .offre:last-child {
+    margin-right: 0;
+  }
+
+  .offres__list:last-child {
+    margin-bottom: 0;
+  }
+
+  /* section courier */
+  .courier {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .courier__description {
+    margin-right: 60px;
+    max-width: 430px;
+  }
+
+  .courier .text {
+    text-align: left;
+  }
+}
